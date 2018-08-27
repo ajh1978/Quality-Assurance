@@ -26,11 +26,11 @@ let assert = require('assert');
     it('should return "Cockroach" when the sentence is "Cockroach is not"', function() {
       assert.equal('Cockroach', functions.longestWord('Cockroach is not'));
     });
-    it('should return "mug" when the sentence is "I am a mug"', function() {
-      assert.equal('mug', functions.longestWord('I am a mug'));
+    it('should return "argument is not a string" when the sentence is not a string', function() {
+      assert.equal('argument is not a string', functions.longestWord(5));
     });
   });
-  
+
   describe('vowelCount', function() {
     it('should return 4 when string is "banana örk"', function() {
       assert.equal(4, functions.vowelCount('banana örk'));
@@ -40,5 +40,8 @@ let assert = require('assert');
     });
     it('should return 17 when string is "IIIÖÖÖÄÄÄeeyyy Buhuu"', function() {
       assert.equal(17, functions.vowelCount('IIIÖÖÖÄÄÄeeyyy Buhuu'));
+    });
+    it('should return "argument is not a string" when the sentence is not a string', function() {
+      assert.equal('argument is not a string', functions.vowelCount(5));
     });
   });

@@ -13,25 +13,33 @@ functions.argument = function(argument) {
 }
 
 functions.longestWord = function(string) {
+  if(typeof string === "string") {
   var wordList = string.split(' ');
   var longestWord = wordList.sort(function(a, b) { return b.length - a.length; });
   return longestWord[0];
-}
-
-functions.vowelCount = function(string)
-{
-  var vowels = 'aeiouyåäöAEIOUYÅÄÖ';
-  var vowelCount = 0;
-
-  for(let i = 0; i < string.length ; i++)
-  {
-    if (vowels.indexOf(string[i]) !== -1)
-    {
-      vowelCount += 1;
-    }
-
   }
-  return vowelCount;
+  else {
+    return 'argument is not a string';
+  }
 }
 
+functions.vowelCount = function(string) {
+  if(typeof string === "string") {
+    var vowels = 'aeiouyåäöAEIOUYÅÄÖ';
+    var vowelCount = 0;
+
+    for(let i = 0; i < string.length ; i++)
+    {
+      if (vowels.indexOf(string[i]) !== -1)
+      {
+        vowelCount += 1;
+      }
+
+    }
+      return vowelCount;
+    }
+  else {
+    return 'argument is not a string';
+  }
+}
 module.exports = functions;
