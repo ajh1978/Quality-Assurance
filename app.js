@@ -24,21 +24,18 @@ functions.longestWord = function(string) {
 }
 
 functions.vowelCount = function(string) {
-  if(typeof string === "string") {
-    var vowels = 'aeiouyåäöAEIOUYÅÄÖ';
-    var vowelCount = 0;
+  if(typeof string != "string") {return null;}
 
-    for(let i = 0; i < string.length ; i++) {
-      if (vowels.indexOf(string[i]) !== -1)
-      {
-        vowelCount += 1;
-      }
+  var vowels = 'aeiouyåäöAEIOUYÅÄÖ';
+  var vowelCount = 0;
+
+  for(let i = 0; i < string.length ; i++) {
+    if (vowels.indexOf(string[i]) !== -1)
+    {
+      vowelCount += 1;
     }
-    return vowelCount;
   }
-  else {
-    return 'argument is not a string';
-  }
+  return vowelCount;
 }
 
 module.exports = functions;

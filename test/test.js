@@ -20,7 +20,7 @@ let assert = require('assert');
   });
 
   describe('longestWord', function() {
-    it('should return "beautiful" when given following sentence', function() {
+    it('should return longest word when given following sentence', function() {
       assert.equal('beautiful', functions.longestWord('Sea is beautiful'));
     });
     it('should return longest number if given numbers in text as parameters', function() {
@@ -32,10 +32,10 @@ let assert = require('assert');
   });
 
   describe('vowelCount', function() {
-    it('should return 12 when given following string', function() {
+    it('should return number of vowels when given following string', function() {
       assert.equal(12, functions.vowelCount('banana örk in Alabama ÖÄå'));
     });
-    it('should return "argument is not a string" when the sentence is not a string', function() {
-      assert.equal('argument is not a string', functions.vowelCount(5));
+    it('should return null when the sentence is not a string', function() {
+      assert.equal(null, functions.vowelCount(5));
     });
   });
