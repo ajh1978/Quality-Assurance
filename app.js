@@ -20,7 +20,7 @@ functions.longestWord = function(string) {
 
 functions.vowelCount = function(string)
 {
-  var vowels = 'aeiouyäöAEIOUYÄÖ';
+  var vowels = 'aeiouyåäöAEIOUYÅÄÖ';
   var vowelCount = 0;
 
   for(let i = 0; i < string.length ; i++)

@@ -34,8 +34,8 @@ describe('Three functions', function() {
     it('should return 4 when string is "banana örk"', function() {
       assert.equal(4, functions.vowelCount('banana örk'));
     });
-    it('should return 5 when string is "Aamen to thät"', function() {
-      assert.equal(5, functions.vowelCount('Aamen to thät'));
+    it('should return 5 when string is "Ååmen to thät"', function() {
+      assert.equal(5, functions.vowelCount('Ååmen to thät'));
     });
     it('should return 17 when string is "IIIÖÖÖÄÄÄeeyyy Buhuu"', function() {
       assert.equal(17, functions.vowelCount('IIIÖÖÖÄÄÄeeyyy Buhuu'));
