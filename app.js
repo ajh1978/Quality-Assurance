@@ -42,4 +42,5 @@ functions.vowelCount = function(string) {
     return 'argument is not a string';
   }
 }
+
 module.exports = functions;
