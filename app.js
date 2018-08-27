@@ -32,7 +32,7 @@ functions.vowelCount = function(string) {
   for(let i = 0; i < string.length ; i++) {
     if (vowels.indexOf(string[i]) !== -1)
     {
-      vowelCount += 1;
+      vowelCount++;
     }
   }
   return vowelCount;
